@@ -52,7 +52,7 @@ const OTPController = {
                           <h1>${Stext}</h1>
                       </div>
                       <p style="letter-spacing: 0.04em">Email này gửi cho bạn mã xác thực OTP. Bạn có 60s để xác thực.</p>
-                      <p>Nếu bạn không phải người thực hiện việc này thì hãy liên hệ cho chúng tôi qua flashspacevn@gmail.com</p>
+                      <p>Nếu bạn không phải người thực hiện việc này thì hãy liên hệ cho chúng tôi qua ilaptoppro@gmail.com</p>
                       <div style="box-sizing: border-box;
                       display: flex;
                       flex-direction: row;
@@ -90,7 +90,7 @@ const OTPController = {
               body: `Mã xác thực OTP bạn được gửi từ flashspacevn:
                      ${Stext}`,
               to: `+84${account.phonenumber}`,
-              from: "+14066934842",
+              from: "+15159729456",
             })
             .then((message) => console.log(message.sid));
         }
