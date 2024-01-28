@@ -15,7 +15,7 @@ const Login = () => {
   const [token, setToken] = useState("");
   const navigate = useNavigate();
   const clientId =
-    "274010756034-p6lifcugpjfclvj4m90p8mm7ssg3d5e3.apps.googleusercontent.com";
+    "782663826370-7jcfefk8mlg91qo939hpu1k85h0hqer9.apps.googleusercontent.com";
   useEffect(() => {
     gapi.load("client:auth2", () => {
       gapi.auth2.init({ clientId: clientId });
@@ -168,7 +168,7 @@ const Login = () => {
                     <div class="row mt-2">
                       <div class="col-md-12">
                         <ReCAPTCHA
-                          sitekey={"6LeTsqYmAAAAABMelNSGlU6nCkMDJuxzSM_qgn3g"}
+                          sitekey={"6LfdMiApAAAAAI1ciCiZHlEMPWFnnKDQhOst95Ci"}
                           onChange={(token) => {
                             setToken(token);
                           }}
