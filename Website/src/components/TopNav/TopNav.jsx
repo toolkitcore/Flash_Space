@@ -9,17 +9,17 @@ const TopNav = () => {
   return (
     <div>
       <div
-        class="container-fluid text-white d-none d-lg-flex"
+        className="container-fluid text-white d-none d-lg-flex"
         style={{ backgroundColor: "#004274" }}
       >
-        <div class="container py-3">
+        <div className="container py-3">
           <div class="d-flex align-items-center">
             <Link to={"/"} style={{ textDecoration: "none" }}>
               <h2 class=" fw-bold m-0" style={{ color: "#FFC107" }}>
                 FLASH SPACE
               </h2>
             </Link>
-            <div class="ms-auto d-flex align-items-center">
+            <div className="ms-auto d-flex align-items-center">
               <small class="ms-4">
                 <i class="fa fa-map-marker-alt me-3"></i>475A Đ.Điện Biên Phủ,
                 P25, Bình Thạnh, TP.Hồ Chí Minh

@@ -18,6 +18,7 @@ const CarouselsCard = (props) => {
       )
       .then((res) => {
         setRoomData(res.data);
+        console.log(res.data);
       });
   }, []);
 

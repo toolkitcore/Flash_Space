@@ -126,22 +126,22 @@ const Login = () => {
             "url(https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600)",
         }}
       >
-        <div class="container">
-          <div class="cardlogin">
-            <div class="row g-0">
-              <div class="col-md-6">
+        <div className="container">
+          <div className="cardlogin">
+            <div className="row g-0">
+              <div className="col-md-6">
                 <div
-                  class="d-flex justify-content-center align-items-center"
+                  className="d-flex justify-content-center align-items-center"
                   style={{ height: "450px" }}
                 >
-                  <div class="py-4 px-3 w-75">
+                  <div className="py-4 px-3 w-75">
                     <h4>Đăng nhập</h4>
                     <form onSubmit={loginUser}>
-                      <div class="row mt-2">
-                        <div class="col-md-12">
-                          <div class="input-field">
+                      <div className="row mt-2">
+                        <div className="col-md-12">
+                          <div className="input-field">
                             <input
-                              class="form-control"
+                              className="form-control"
                               id="input3"
                               required
                               onChange={(e) => setUsername(e.target.value)}
@@ -150,11 +150,11 @@ const Login = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="row mt-2 mb-2">
-                        <div class="col-md-12">
-                          <div class="input-field">
+                      <div className="row mt-2 mb-2">
+                        <div className="col-md-12">
+                          <div className="input-field">
                             <input
-                              class="form-control"
+                              className="form-control"
                               id="input4"
                               required
                               onChange={(e) => setPassword(e.target.value)}
@@ -165,8 +165,8 @@ const Login = () => {
                       </div>
                     </form>
 
-                    <div class="row mt-2">
-                      <div class="col-md-12">
+                    <div className="row mt-2">
+                      <div className="col-md-12">
                         <ReCAPTCHA
                           sitekey={"6LfdMiApAAAAAI1ciCiZHlEMPWFnnKDQhOst95Ci"}
                           onChange={(token) => {
@@ -175,18 +175,18 @@ const Login = () => {
                         />
                       </div>
                     </div>
-                    <div class="row mt-2">
-                      <div class="col-md-12">
+                    <div className="row mt-2">
+                      <div className="col-md-12">
                         <button
-                          class="btn btn-primary w-100 signup-button"
+                          className="btn btn-primary w-100 signup-button"
                           onClick={loginUser}
                         >
                           Đăng nhập
                         </button>
                       </div>
                     </div>
-                    <div class="row mt-2">
-                      <div class="col-md-12">
+                    <div className="row mt-2">
+                      <div className="col-md-12">
                         <GoogleLogin
                           clientId={clientId}
                           buttonText="Đăng nhập bằng Google"
@@ -195,31 +195,31 @@ const Login = () => {
                         />
                       </div>
                     </div>
-                    <div class="member mt-1">
+                    <div className="member mt-1">
                       <span>Tạo một tài khoản? </span>
-                      <Link class="text-decoration-none" to={"/register"}>
+                      <Link className="text-decoration-none" to={"/register"}>
                         Đăng ký
                       </Link>
                     </div>
-                    <div class="member mt-1">
+                    <div className="member mt-1">
                       <span>Quên mật khẩu? </span>
-                      <Link class="text-decoration-none" to={"/reset"}>
+                      <Link className="text-decoration-none" to={"/reset"}>
                         Lấy lại mật khẩu
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="right-side-content-login">
+              <div className="col-md-6">
+                <div className="right-side-content-login">
                   <div
-                    class="content d-flex flex-column"
+                    className="content d-flex flex-column"
                     style={{ top: "210px", left: "60px" }}
                   >
                     <h3 className="text-warning">FLASH SPACE</h3>
                     <h5>Ứng dụng thuê phòng nhanh chóng và tiện lợi</h5>
                   </div>
-                  <div class="right-side">
+                  <div className="right-side">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -239,7 +239,7 @@ const Login = () => {
               </div>
             </div>
           </div>
-          <div class="parallelogram">
+          <div className="parallelogram">
             <span></span>
             <span></span>
             <span></span>
